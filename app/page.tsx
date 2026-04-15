@@ -19,17 +19,9 @@ export default function MainPage() {
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <div className={styles.shape}></div>
           <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className}`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{" "}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
+            <strong>Welcome to Acme.</strong> 
           </p>
-          <input
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Type here"
-      />
+         
 
           <Link
             href="/dashboard"
@@ -50,7 +42,7 @@ export default function MainPage() {
           alt="Hero Image"
           />
            <Image
-      src="https://images.unsplash.com/photo-1774179174302-6bec19462ce2"
+      src="/hero-desktop.png"
       alt="Picture of the author"
       className="hidden md:block"
       width={1000}
