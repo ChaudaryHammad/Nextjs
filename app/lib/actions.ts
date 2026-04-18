@@ -71,7 +71,7 @@ try {
 }
 
 export async function DeleteInvoiceById( id : string ) {
-  throw new Error('Not implemented yet');
+
     await sql`Delete from invoices WHERE id=${id}`;
     revalidatePath('/dashboard/invoices');
   
